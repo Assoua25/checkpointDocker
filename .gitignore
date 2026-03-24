@@ -43,3 +43,11 @@ next-env.d.ts
 /app/generated/prisma
 
 /generated/prisma
+
+# Claude Code
+.claude/
+CLAUDE.md
+AGENTS.md
+
+# SQLite database
+tasks.db

@@ -67,7 +67,8 @@ function TaskCard({ task }: { task: TaskWithUser }) {
   const overdue = isOverdue(task.due_date, task.status);
 
   return (
-    <article className="flex flex-col rounded-2xl border border-zinc-200/80 bg-white/70 p-6 shadow-sm backdrop-blur-sm dark:border-zinc-800/80 dark:bg-zinc-900/50">
+    <Link href={`/liste-taches/${task.id}`} className="group block">
+    <article className="flex flex-col rounded-2xl border border-zinc-200/80 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-shadow hover:shadow-md dark:border-zinc-800/80 dark:bg-zinc-900/50">
       {/* Titre + priorité */}
       <div className="flex items-start justify-between gap-3">
         <h2 className="flex-1 font-semibold leading-snug text-zinc-900 dark:text-zinc-50">
@@ -163,6 +164,7 @@ function TaskCard({ task }: { task: TaskWithUser }) {
         </div>
       </div>
     </article>
+    </Link>
   );
 }
 
