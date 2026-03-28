@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
     const tasks = await prisma.tasks.findMany({
       where: {
         ...(title && {
-          title: { contains: title, mode: "insensitive" },
+          title: { contains: title },
         }),
         ...(status && { status }),
         ...(priority && { priority }),
