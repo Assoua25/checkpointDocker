@@ -1,6 +1,7 @@
 name: CI
 on:
   push:
+    branches: [main, master]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,3 +13,15 @@ jobs:
     - run: npm ci
     - run: npx prisma generate
     - run: npm run build
+    
+    - name: Login GHCR
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Build & Push
+      run: |
+        docker build -t ghcr.io/${{ github.repository_owner }}/next-app:latest .
+        docker push ghcr.io/${{ github.repository_owner }}/next-app:latest
