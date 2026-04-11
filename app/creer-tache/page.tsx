@@ -72,14 +72,14 @@ export default function CreerTache() {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Arrière-plan décoratif */}
+
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(120,119,198,0.18),transparent)]" />
       <div className="pointer-events-none absolute right-0 top-1/4 -z-10 h-72 w-72 translate-x-1/3 rounded-full bg-violet-400/10 blur-3xl" />
       <div className="pointer-events-none absolute bottom-0 left-0 -z-10 h-64 w-64 -translate-x-1/4 translate-y-1/4 rounded-full bg-emerald-400/10 blur-3xl" />
 
       <main className="mx-auto w-full max-w-2xl px-6 py-14 sm:py-20">
 
-        {/* En-tête */}
+
         <div className="mb-10">
           <p className="mb-3 inline-flex rounded-full border border-zinc-200/80 bg-white/60 px-3 py-1 text-xs font-medium text-zinc-600 backdrop-blur-sm dark:border-zinc-700/80 dark:bg-zinc-900/60 dark:text-zinc-400">
             Nouvelle tâche
@@ -88,11 +88,11 @@ export default function CreerTache() {
             Créer une tâche
           </h1>
           <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-            Remplissez les informations ci-dessous pour enregistrer une nouvelle tâche.
+            Remplissez les informations ci dessous pour enregistrer de nouvelles tâches.
           </p>
         </div>
 
-        {/* Message de succès */}
+
         {success && (
           <div className="mb-6 flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300">
             <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -102,7 +102,6 @@ export default function CreerTache() {
           </div>
         )}
 
-        {/* Message d'erreur */}
         {error && (
           <div className="mb-6 flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-red-800 dark:border-red-800 dark:bg-red-950/50 dark:text-red-300">
             <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
