@@ -168,7 +168,6 @@ function TaskCard({ task }: { task: TaskWithUser }) {
   );
 }
 
-// ── État vide ──────────────────────────────────────────────────────────────
 
 function EmptyState() {
   return (

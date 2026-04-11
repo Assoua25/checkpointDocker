@@ -35,7 +35,6 @@ jobs:
           docker build -t ghcr.io/assoua25/task-manager:latest .
           docker push ghcr.io/assoua25/task-manager:latest
 
-      # Déploiement automatique sur le VPS
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
