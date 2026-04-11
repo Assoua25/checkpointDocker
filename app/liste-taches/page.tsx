@@ -222,7 +222,6 @@ export default async function ListeTachesPage() {
 
   return (
     <div className="relative flex flex-1 flex-col overflow-hidden">
-      {/* Fond décoratif cohérent avec la page d'accueil */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(120,119,198,0.18),transparent)] dark:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(120,119,198,0.12),transparent)]"
         aria-hidden
