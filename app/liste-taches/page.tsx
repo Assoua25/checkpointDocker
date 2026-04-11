@@ -206,7 +206,6 @@ function EmptyState() {
   );
 }
 
-// ── Page principale ────────────────────────────────────────────────────────
 
 export default async function ListeTachesPage() {
   const tasks = await prisma.tasks.findMany({
