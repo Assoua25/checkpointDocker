@@ -111,7 +111,7 @@ export default function RecherchePage() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">Recherche de tâches</h1>
-          <p className="text-gray-500 mt-1">Filtre les tâches selon le titre, statut, priorité ou date d'échéance.</p>
+          <p className="text-gray-500 mt-1">Filtre les tâches selon le titre, statut, priorité ou date d&apos;échéance.</p>
         </div>
 
         {/* Formulaire */}
