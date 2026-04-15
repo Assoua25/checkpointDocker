@@ -1,11 +1,12 @@
 services:
   app:
-    build: .
+    image: ghcr.io/assoua25/task-manager:latest
     ports:
       - "3009:3000"
     environment:
       DATABASE_URL: "file:/app/data/dev.db"
     volumes:
       - app_data:/app/data
+
 volumes:
   app_data:
